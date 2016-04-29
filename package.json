@@ -8,14 +8,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/rjVapes/meanio-system.git"
-  },  
+  },
   "mean": "0.6.x",
   "engines": {
     "node": "4.x",
     "npm": "3.x"
   },
   "dependencies": {
-    "meanio-circles": "^0.1.x",
+    "meanio-circles": "git://github.com/linnovate/meanio-circles.git",
     "serve-favicon": "latest"
   },
   "license": "MIT"
