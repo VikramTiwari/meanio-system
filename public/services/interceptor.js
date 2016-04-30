@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 angular.module('mean-factory-interceptor', [])
   .factory('httpInterceptor', ['$q', '$location',
@@ -24,9 +24,9 @@ angular.module('mean-factory-interceptor', [])
       };
     }
   ])
-//Http Interceptor to check auth failures for XHR requests
-.config(['$httpProvider',
-  function($httpProvider) {
-    $httpProvider.interceptors.push('httpInterceptor');
-  }
-]);
+  //Http Interceptor to check auth failures for XHR requests
+  .config(['$httpProvider',
+    function($httpProvider) {
+      $httpProvider.interceptors.push('httpInterceptor');
+    }
+  ]);

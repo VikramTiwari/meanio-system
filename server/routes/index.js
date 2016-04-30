@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 var mean = require('meanio');
 
@@ -11,12 +11,12 @@ module.exports = function(System, app, database) {
   app.route('/api/aggregatedassets')
     .get(index.aggregatedList);
 
-  app.get('/*',function(req,res,next){
-        res.header('workerID' , JSON.stringify(mean.options.workerid) );
-        next(); // http://expressjs.com/guide.html#passing-route control
+  app.get('/*', function(req, res, next) {
+    res.header('workerID', JSON.stringify(mean.options.workerid));
+    next(); // http://expressjs.com/guide.html#passing-route control
   });
 
-  app.get('/api/get-public-config', function(req, res){
+  app.get('/api/get-public-config', function(req, res) {
     var config = mean.loadConfig();
 
     return res.send(config.public);

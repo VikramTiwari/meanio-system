@@ -1,3 +1,5 @@
+'use strict()';
+
 angular.module('mean.system').provider('$meanConfig', [function() {
   function MeanConfigProvider() {
     this.config = {};
@@ -9,7 +11,7 @@ angular.module('mean.system').provider('$meanConfig', [function() {
       if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
         self.config = JSON.parse(xmlhttp.responseText);
       }
-    }
+    };
 
     xmlhttp.open("GET", "/api/get-public-config", false);
     xmlhttp.send();

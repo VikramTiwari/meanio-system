@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 angular.module('mean.system').factory('Menus', ['$resource',
   function($resource) {

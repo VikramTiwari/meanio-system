@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 // $viewPathProvider, to allow overriding system default views
 angular.module('mean.system').provider('$viewPath', function() {

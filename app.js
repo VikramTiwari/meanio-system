@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 /*
  * Defining the Package
@@ -20,12 +20,12 @@ SystemPackage.register(function(app, database, circles) {
   SystemPackage.routes(app, database);
 
   SystemPackage.angularDependencies(['ui.router', 'mean-factory-interceptor']);
-  
+
 
   // The middleware in config/express will run before this code
 
   // Setting the favicon and static folder
-  if(config.favicon) {
+  if (config.favicon) {
     app.use(favicon(config.favicon));
   } else {
     app.use(favicon(__dirname + '/public/assets/img/favicon.ico'));
